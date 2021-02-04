@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  width: 100vw;
+  height: 100px;
+  position: relative;
+}
+
+.logoDiv {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+}
+
+.logo {
+  font-size: 60px;
+  font-weight: 200;
+  padding: 0px;
+  margin-left: 12px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.socials {
+  margin: 30px;
+  height: 40px;
+  width: 214px;
+  right: 0px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttonClass {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  padding: 7px;
+  border: 0;
+  background: none;
+  color: white;
+  cursor: pointer;
+  transition: color 250ms ease-in-out, transform 150ms ease;
+  outline: none;
+}
+
+button:hover {
+  color: #b1b1b1;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.menu {
+  position: absolute;
+  left: 150px;
+  top: 10px;
+}
+
+.icon {
+  transition: color 250ms ease-in-out;
+}
+
+icon:hover {
+  color: #b1b1b1;
+}
+
+.itemHeader {
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 69px;
+  position: relative;
+  border: 1px solid white;
+}
+.img {
+  border-radius: 50%;
+  width: 60px;
+  border: 2px solid white;
+  position: absolute;
+  padding: 2px;
+}
+
+.horizontal {
+  width: 350px;
+  background-color: white;
+  height: 1px;
+  position: relative;
+  top: 53%;
+  left: 160px;
+}
+
+.vertical {
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+
+.headTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+  position: absolute;
+  left: 80px;
+  top: 36%;
+  padding: 0;
+  margin: 0;
+}
