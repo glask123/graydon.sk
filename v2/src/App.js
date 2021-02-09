@@ -1,48 +1,48 @@
 import "./App.css";
-import MenuBar from "./components/menubar";
-import Body from "./components/body";
-import { ReactComponent as Arrow } from "./assets/arrow.svg";
+import Main from "./pages/main";
+import Gallery from "./pages/gallery";
+import Contact from "./pages/contact";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "#1A1A1A", minHeight: "100vh" }}>
-      <MenuBar />
-      <Body />
-      <div
-        style={{
-          position: "fixed",
-          width: "100%",
-          height: "5%",
-          bottom: 0,
-          backgroundColor: "#1A1A1A",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            top: "-100%",
-            height: "100%",
-            width: "100%",
-            backgroundImage:
-              "linear-gradient(to top, rgba(26,26,26,1), rgba(26,26,26,0))",
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Main} />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/contact" component={Contact} />
+        <Route
+          path="/github"
+          component={() => {
+            window.location.href = "https://github.com/glask123";
+            return null;
           }}
-        ></div>
-        <h3
-          style={{
-            position: "absolute",
-            fontSize: 10,
-            right: 20,
-            bottom: 15,
-            color: "white",
-            fontFamily: "Poppins",
-            fontWeight: 200,
+        />
+        <Route
+          path="/youtube"
+          component={() => {
+            window.location.href =
+              "https://www.youtube.com/channel/UC0ZOHGEBcc15STsyv-mx76Q";
+            return null;
           }}
-        >
-          © Graydon Schulze-Kalt 2020
-        </h3>
-        <Arrow className="arrow" />
-      </div>
-    </div>
+        />
+        <Route
+          path="/lmp"
+          component={() => {
+            window.location.href = "https://www.lizamonjauzeproductions.com/";
+            return null;
+          }}
+        />
+        <Route
+          path="/spotify"
+          component={() => {
+            window.location.href =
+              "https://open.spotify.com/user/glask1234?si=aRIEHAtuSTSt5dLgF4iahw";
+            return null;
+          }}
+        />
+      </Switch>
+    </Router>
   );
 }
 

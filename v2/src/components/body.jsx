@@ -65,8 +65,10 @@ function body() {
         <div className="body">
           <ul style={{ marginLeft: "30px" }}>
             <li>
-              CertamenBot : : Discord bot coded in Javascript and Discord API
-              (see more)
+              <a href="https://certamenbot.graydon.sk" className="link">
+                CertamenBot
+              </a>{" "}
+              : : Discord bot coded in Javascript and Discord API
             </li>
             <li>
               COCTBot : : Discord bot coded in Javascript and Discord API
@@ -81,7 +83,12 @@ function body() {
               graydon.sk : : Personal website currently made with plain HTML,
               React in dev
             </li>
-            <li>coct.online : : Competition website in dev with HTML/CSS/JS</li>
+            <li>
+              <a href="https://coct.online" className="link">
+                coct.online
+              </a>{" "}
+              : : Competition website in dev with HTML/CSS/JS
+            </li>
             <li>
               Crosss-platform COVID-19 Vaccination tracker app in development
               with React Native and NodeJS backend

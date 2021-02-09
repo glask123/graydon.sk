@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function linkButton(props) {
   return (
@@ -10,7 +11,9 @@ export default function linkButton(props) {
         marginTop: 15,
       }}
     >
-      <button className="linkButton">{props.name}</button>
+      <Link to={props.name}>
+        <button className="linkButton">{props.name}</button>
+      </Link>
     </div>
   );
 }
