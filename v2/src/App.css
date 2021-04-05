@@ -66,7 +66,7 @@
 }
 
 .socials {
-  margin: 30px;
+  margin: 40px;
   height: 40px;
   width: 214px;
   right: 0px;
@@ -196,12 +196,40 @@ icon:hover {
   width: 500px;
 }
 
-@media (max-width: 620px) {
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.project {
+  width: 130px;
+  height: 130px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  transition: opacity 250ms ease-in-out;
+}
+
+.project:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 635px) {
   .item {
     width: 95%;
   }
   .formdiv {
     width: 95%;
+  }
+}
+
+@media (max-width: 550px) {
+  .socials {
+    top: 40px;
   }
 }
 
@@ -353,4 +381,80 @@ icon:hover {
 .images:hover {
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
   filter: grayscale(80%);
+}
+
+.streambody {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.streamcontainer {
+  width: calc(100vw - 60px);
+  height: calc(100vh - 60px);
+  background: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.video {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.novideo {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vidbutton {
+  width: 60px;
+  height: 26px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 6px;
+  color: white;
+  margin-left: 10px;
+  transition: color 250ms ease-in-out, transform 150ms ease,
+    border-color 250ms ease-in-out;
+  outline: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.vidbutton:hover {
+  color: #7d7d7d;
+  border-color: #7d7d7d;
+}
+
+.vidbutton:active {
+  transform: scale(0.98);
+}
+
+.vidinput {
+  width: 240px;
+  height: 20px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 6px;
+  outline: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }

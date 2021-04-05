@@ -11,7 +11,7 @@ export default function linkButton(props) {
         marginTop: 15,
       }}
     >
-      <Link to={props.name}>
+      <Link to={`links/${props.name}`}>
         <button className="linkButton">{props.name}</button>
       </Link>
     </div>
