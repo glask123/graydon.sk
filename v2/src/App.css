@@ -349,6 +349,11 @@ icon:hover {
 .social {
   width: 30px;
   height: 30px;
+  transition: opacity 250ms ease-in-out;
+}
+
+.social:hover {
+  opacity: 70%;
 }
 
 .gallerynav {
