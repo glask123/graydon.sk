@@ -45,8 +45,8 @@ export default function main() {
               }}
             >
               A highschool student in Los Angeles attending Harvard-Westlake.
-              I'm interested in coding, aerospace, music, and more. <br />{" "}
-              <br /> Scroll down or click any of the buttons above to get
+              I'm interested in coding, engineering, aerospace, music, and more.{" "}
+              <br /> <br /> Scroll down or click any of the buttons above to get
               started.
             </p>
           </div>
