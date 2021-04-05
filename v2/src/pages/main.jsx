@@ -13,23 +13,55 @@ export default function main() {
       <FadeIn>
         <div
           style={{
+            marginTop: "30px",
             marginLeft: "auto",
             marginRight: "auto",
             marginBottom: "40px",
-            width: "40%",
+            width: "470px",
             height: "300px",
-            border: "1px solid white",
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "row",
           }}
         >
-          <div style={{ width: "50%", height: "100%" }}>
-            <h1>I'm Graydon Schulze-Kalt,</h1>
-            <p>
+          <div style={{ width: "50%" }}>
+            <h1
+              style={{
+                color: "white",
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                lineHeight: "35px",
+              }}
+            >
+              I'm Graydon Schulze-Kalt,
+            </h1>
+            <p
+              style={{
+                color: "white",
+                marginTop: "20px",
+                fontFamily: "Poppins",
+                fontWeight: 300,
+                fontSize: "15px",
+              }}
+            >
               A highschool student in Los Angeles attending Harvard-Westlake.
               I'm interested in coding, aerospace, music, and more. <br />{" "}
               <br /> Scroll down or click any of the buttons above to get
               started.
             </p>
           </div>
+          <img
+            src={Photo}
+            alt="personal"
+            style={{
+              width: "40%",
+              height: "90%",
+              objectFit: "cover",
+              border: "1px solid white",
+              padding: "4px",
+              boxShadow: "5px 5px 15px -4px rgba(0,0,0,0.3)",
+            }}
+          />
         </div>
         <Body />
       </FadeIn>
