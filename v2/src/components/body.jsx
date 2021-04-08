@@ -6,6 +6,9 @@ import Design from "../assets/3d.png";
 import Theater from "../assets/theater.png";
 import Music from "../assets/music.png";
 import Photo from "../assets/photo.png";
+import SoftwareProjects from "../components/software-proj";
+import Button from "./linkbutton";
+import Vehicles from "./rocket-vehicles";
 
 function body() {
   return (
@@ -14,87 +17,80 @@ function body() {
         minHeight: "calc(100vh - 100px)",
       }}
     >
-      <Item
-        section="Software"
-        image={Software}
-        name="GITHUB"
-        link="https://github.com/glask123"
-      >
-        <div className="title">Languages & Skills</div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>Java [Intermediate]</li>
-            <li>HTML5/CSS [Intermediate]</li>
-            <li>
-              Javascript [Intermediate]
-              <ul>
-                <li style={{ marginLeft: "30px" }}>
-                  knowledgeable in NodeJS, DiscordJS
-                </li>
-                <li style={{ marginLeft: "30px" }}>
-                  beginner in React, React Native, ExpressJS, MongoDB, GraphQL,
-                  JOI, Bootstrap
-                </li>
-              </ul>
-            </li>
-            <li>
-              C++ [Novice]
-              <ul>
-                <li style={{ marginLeft: "30px" }}>
-                  experience with Arduino & Teensy
-                </li>
-              </ul>
-            </li>
-            <li>C [Beginner]</li>
-          </ul>
+      <Item section="Software" image={Software}>
+        <div className="title">
+          Languages & Skills
+          <div
+            style={{
+              width: "50px",
+              height: "1px",
+              backgroundColor: "white",
+              marginTop: "-2px",
+            }}
+          />
         </div>
-        <div className="title">Courses</div>
         <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>AP Computer Science A [Java] — Harvard-Westlake</li>
-            <li>
-              AP Computer Science Principles [Javascript] — Harvard-Westlake (5)
+          <ul className="list">
+            <li className="main-list-item">
+              <b style={{ fontWeight: 400 }}>JavaScript</b> ➞ Intermediate to
+              Advanced knowledge of web development with React, cross-platform
+              app development with React Native, and cross-platform desktop app
+              development with React and Electron. Experience with plain NodeJS
+              applications as well as ExpressJS servers, utilizing
+              authentication and MongoDB databases.
             </li>
-            <li>
-              Introduction to Programming Fundamentals [C] — Duke University
-              through Coursera
+            <li className="main-list-item">
+              <b style={{ fontWeight: 400 }}>HTML5/CSS</b> ➞ Intermediate to
+              Advanced knowledge of web development without a framework.
+              Developed multiple websites with this method.
             </li>
-          </ul>
-        </div>
-        <div className="title">Projects</div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>
-              <a href="https://certamenbot.graydon.sk" className="link">
-                CertamenBot
-              </a>{" "}
-              : : Discord bot coded in Javascript and Discord API
+            <li className="main-list-item">
+              <b style={{ fontWeight: 400 }}>C++</b> ➞ Novice to Intermediate
+              knowledge of C++ within the Arduino/C++ language. Looking to
+              branch out to broader C++ in future endeavors.
             </li>
-            <li>
-              COCTBot : : Discord bot coded in Javascript and Discord API
-              <ul>
-                <li style={{ marginLeft: "30px" }}>
-                  Serves approximately 50 people in statewide CA Latin
-                  competition to be held in Summer 2021
-                </li>
-              </ul>
+            <li className="main-list-item">
+              <b style={{ fontWeight: 400 }}>Java</b> ➞ Novice to Intermediate
+              knowledge of the Java programming language and topics such as
+              recursion and search/sort algorithms and their uses. Very little
+              application of the language in real-world examples.
             </li>
-            <li>
-              graydon.sk : : Personal website currently made with plain HTML,
-              React in dev
+            <li className="main-list-item greylist">
+              <b style={{ fontWeight: 400 }}>Python</b> ➞ Beginner in Python,
+              learning technologies for web backends like Django. Working with
+              the kRPC interface to create flight software for Kerbal Space
+              Program, as well as learning how to create simulations for real
+              Thrust Vector Control models.
             </li>
-            <li>
-              <a href="https://coct.online" className="link">
-                coct.online
-              </a>{" "}
-              : : Competition website in dev with HTML/CSS/JS
+            <li className="main-list-item greylist">
+              <b style={{ fontWeight: 400 }}>Swift</b> ➞ Beginner in Swift,
+              learning native iOS and MacOS development.
             </li>
-            <li>
-              Crosss-platform COVID-19 Vaccination tracker app in development
-              with React Native and NodeJS backend
+            <li className="main-list-item greylist">
+              <b style={{ fontWeight: 400 }}>C</b> ➞ Took a course in C from
+              Duke University on Coursera. Little knowledge otherwise.
             </li>
           </ul>
         </div>
+        <br />
+
+        <div className="title">
+          Projects
+          <div
+            style={{
+              width: "50px",
+              height: "1px",
+              backgroundColor: "white",
+              marginTop: "-2px",
+            }}
+          />
+        </div>
+        <SoftwareProjects />
+        <Button
+          name="GITHUB"
+          link="https://github.com/glask123"
+          local={false}
+        />
       </Item>
       <Item
         section="Rocketry"
@@ -102,7 +98,9 @@ function body() {
         name="YOUTUBE"
         link="https://www.youtube.com/channel/UC0ZOHGEBcc15STsyv-mx76Q"
       >
-        <div className="title">Development Vehicles</div>
+        <div className="title">Rockets</div>
+
+        <Vehicles />
         <div className="body">
           <ul>
             <li style={{ marginLeft: "30px" }}>

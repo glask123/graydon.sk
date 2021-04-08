@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2" height="221" viewBox="0 0 2 221">
+  <defs>
+    <style>
+      .dashed {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+        stroke-dasharray: 13;
+       }
+    </style>
+  </defs>
+  <line id="Line_6" data-name="Line 6" class="dashed" y2="221" transform="translate(1)"/>
+</svg>

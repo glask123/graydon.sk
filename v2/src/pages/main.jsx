@@ -2,7 +2,7 @@ import "../App.css";
 import MenuBar from "../components/menubar";
 import Body from "../components/body";
 import FadeIn from "react-fade-in";
-import Photo from "../assets/personal.jpg";
+import Photo from "../assets/portrait.png";
 var Scroll = require("react-scroll");
 var scroll = Scroll.animateScroll;
 
@@ -13,10 +13,10 @@ export default function main() {
       <FadeIn>
         <div
           style={{
-            marginTop: "30px",
+            marginTop: "20px",
             marginLeft: "auto",
             marginRight: "auto",
-            marginBottom: "40px",
+            marginBottom: "30px",
             width: "470px",
             height: "300px",
             display: "flex",
@@ -29,7 +29,7 @@ export default function main() {
               style={{
                 color: "white",
                 fontFamily: "Poppins",
-                fontWeight: 600,
+                fontWeight: 500,
                 lineHeight: "35px",
               }}
             >
@@ -40,7 +40,7 @@ export default function main() {
                 color: "white",
                 marginTop: "20px",
                 fontFamily: "Poppins",
-                fontWeight: 300,
+                fontWeight: 200,
                 fontSize: "15px",
               }}
             >
@@ -52,9 +52,9 @@ export default function main() {
           </div>
           <img
             src={Photo}
-            alt="personal"
+            alt="portrait"
             style={{
-              width: "40%",
+              width: "44%",
               height: "90%",
               objectFit: "cover",
               border: "1px solid white",
@@ -95,7 +95,7 @@ export default function main() {
             fontWeight: 200,
           }}
         >
-          © Graydon Schulze-Kalt 2020
+          © Graydon Schulze-Kalt 2021
         </h3>
         <div className="arrow" onClick={scroll.scrollToTop}>
           ^

@@ -1,5 +1,4 @@
 import React from "react";
-import CertamenBot from "../assets/cb.png";
 
 export default function Project() {
   return (
