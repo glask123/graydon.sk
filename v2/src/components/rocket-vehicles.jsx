@@ -63,7 +63,28 @@ export default function Vehicles() {
               />
             </FadeIn>
           </div>
-          <div style={{ height: "200px", flex: 1 }}></div>
+          <div style={{ height: "200px", flex: 1 }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  marginBottom: "2px",
+                  marginRight: "3px",
+                  borderRadius: "50%",
+                  width: "10px",
+                  height: "10px",
+                  backgroundColor: "#e6b035",
+                }}
+              />
+              <h5 style={{ color: "#e6b035" }}>ASSEMBLY</h5>
+            </div>
+          </div>
           <div
             style={{
               width: "130px",
