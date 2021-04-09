@@ -9,6 +9,9 @@ import Photo from "../assets/photo.png";
 import SoftwareProjects from "../components/software-proj";
 import Button from "./linkbutton";
 import Vehicles from "./rocket-vehicles";
+import Computer from "./computer";
+import StockCircuit from "../assets/stock-circuit.jpeg";
+import BigTag from "./tag-big";
 
 function body() {
   return (
@@ -101,118 +104,91 @@ function body() {
         <div className="title">Rockets</div>
 
         <Vehicles />
-        <div className="body">
-          <ul>
-            <li style={{ marginLeft: "30px" }}>
-              Rocket 1.0
-              <ul style={{ marginLeft: "30px" }}>
-                <li>
-                  2in diameter passively stabilized test vehicle, designed to
-                  better understand parachute deployment
-                </li>
-                <li>
-                  Approximately 110m max apogee planned flying on an Estes D12
-                </li>
-                <li>
-                  5 Flights planned with a combination of C5-3 and D12 motors
-                </li>
-                <li>
-                  2 flights with Volo flight computer (see more) to understand
-                  Arduino environment before moving to TVC
-                </li>
-                <li>
-                  First flight planned for mid February, final flight in late
-                  March
-                </li>
-              </ul>
-            </li>
-            <li style={{ marginLeft: "30px" }}>
-              Rocket 2.0
-              <ul style={{ marginLeft: "30px" }}>
-                <li>
-                  3in diameter actively stabilized vehicle with Thrust Vector
-                  Control via Volo computer
-                </li>
-                <li>
-                  Mechanical parachute deployment controlled by computer with a
-                  servo
-                </li>
-                <li>
-                  No flight profiles currently created, CAD and software in dev
-                </li>
-                <li>Mid-power motors (E or F)</li>
-                <li>First flight planned for late April</li>
-              </ul>
-            </li>
-            <li style={{ marginLeft: "30px" }}>
-              Rocket 3.0
-              <ul style={{ marginLeft: "30px" }}>
-                <li>2 stage passively stabilized vehicle</li>
-                <li>No development in progress</li>
-                <li>
-                  Upper-mid power motors, pathfinder vehicle before L1
-                  Certification
-                </li>
-                <li>
-                  Parachute deployment and datalogging starting with Volo
-                  computer, then moving to Comp 2.0 (unnamed)
-                </li>
-                <li>First flight planned for Summer 2021</li>
-              </ul>
-            </li>
-            <li style={{ marginLeft: "30px" }}>
-              Rocket 4.0
-              <ul style={{ marginLeft: "30px" }}>
-                <li>
-                  Test model of SpaceX's Starship flight vehicle, utilizing EDF
-                  power rather than solid motors to assist in better control.
-                </li>
-                <li>
-                  Active control using thrust vanes located within motor body
-                </li>
-                <li>
-                  Four actuating fins for descent control before parachute
-                  and/or EDF powered descent
-                </li>
-                <li>CAD modeling in progress</li>
-                <li>
-                  First flights planned to be purely a hopper vehicle to test
-                  verticle ascent and descent tech
-                </li>
-                <li>Utilizing new SMD computer</li>
-                <li>First flights in Summer 2021</li>
-              </ul>
-            </li>
-          </ul>
+        <div className="title">
+          Computers
+          <div
+            style={{
+              width: "50px",
+              height: "1px",
+              backgroundColor: "white",
+              marginTop: "-2px",
+            }}
+          />
         </div>
-        <div className="title">Computers</div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>
-              Volo : : First computer designed off of{" "}
-              <a href="https://bps.space/" className="link">
-                BPS Space's
-              </a>{" "}
-              Blip using Teensy 3.2
-            </li>
-            <li>Evectio : : Launch computer using Arduino Nano</li>
-            <li>
-              Unnamed : : Flight computer using SMD components based off of
-              Teensy 3.2
-            </li>
-          </ul>
+
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "-10px",
+          }}
+        >
+          <Computer
+            img={StockCircuit}
+            name="Volo"
+            desc="Primary flight computer designed off of BPS Space's Blip computer using through-hole mounted components."
+            cpu="MK20DX256VLH7 (Teensy 3.2)"
+            imu="MPU-6050"
+            pressure="BMP280"
+          />
+          <Computer
+            img={StockCircuit}
+            name="Evectio"
+            desc="Primary launch computer, first fully-custom designed computer in Eagle based on an Arduino Nano."
+            cpu="atmega328p (Nano)"
+            imu="N/A"
+            pressure="N/A"
+          />
+          <Computer
+            img={StockCircuit}
+            name="COMING SOON"
+            desc="SMD flight computer custom designed in Eagle with better sensors, more I/O, and more capability."
+            cpu="MK20DX256VLH7 (PJRC Schematic)"
+            imu="BNO-055"
+            pressure="BMP280"
+          />
         </div>
-        <div className="title">Technologies</div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>Autodesk EAGLE [Intermediate]</li>
-            <li>Autodesk Inventor [Intermediate]</li>
-            <li>Openrocket [Intermediate]</li>
-            <li>Openmotor [Beginner]</li>
-            <li>Matlab & Simulink [Learning]</li>
-          </ul>
+
+        <div className="title" style={{ marginTop: "15px" }}>
+          Technologies
+          <div
+            style={{
+              width: "50px",
+              height: "1px",
+              backgroundColor: "white",
+              marginTop: "-2px",
+            }}
+          />
+        </div>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <div
+            style={{
+              width: "90%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              flexWrap: "wrap",
+            }}
+          >
+            <BigTag tag="C++ (Arduino)" desc="Intermediate" />
+            <BigTag tag="Autodesk Eagle" desc="Proficient" />
+            <BigTag tag="Autodesk Inventor" desc="Proficient" />
+            <BigTag tag="OpenRocket" desc="Proficient" />
+            <BigTag tag="OpenMotor" desc="Limited proficiency" />
+            <BigTag tag="Matlab & Simulink" desc="Learning" />
+          </div>
         </div>
       </Item>
+
       <Item section="Music" image={Music} name="SPOTIFY">
         <div className="title">Instruments</div>
         <div className="body">

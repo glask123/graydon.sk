@@ -564,3 +564,41 @@ icon:hover {
     stroke-dashoffset: 0;
   }
 }
+
+.rocket-icon {
+  margin-right: 10px;
+  height: 17px;
+  width: auto;
+}
+
+.rocket-icon-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.rocket-icon-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.comp-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comp-icon {
+  margin-right: 10px;
+  height: 22px;
+  width: auto;
+  margin-bottom: 2px;
+  margin-left: 15px;
+}
+
+.comp-text {
+  font-size: 13px;
+  font-weight: 300;
+}
