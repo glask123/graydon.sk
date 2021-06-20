@@ -602,3 +602,9 @@ icon:hover {
   font-size: 13px;
   font-weight: 300;
 }
+
+.software-tag-title {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 300;
+}

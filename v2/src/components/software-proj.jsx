@@ -25,7 +25,7 @@ export default function SoftwareProjects() {
         "https://discord.com/oauth2/authorize?client_id=726722356122484746&scope=bot&permissions=8"
       }
       type="Bot"
-      tags={["JavaScript", "NodeJS", "DiscordJS"]}
+      tags={["JavaScript", "Node.js", "Discord.js"]}
     />,
     <NewProject
       left={false}
@@ -35,7 +35,7 @@ export default function SoftwareProjects() {
       body="Supplemental Discord bot used for managing the California Online Certamen Tournament. Integrates with CertamenBot for best use. "
       link={"/not-found"}
       type="Bot"
-      tags={["JavaScript", "NodeJS", "DiscordJS"]}
+      tags={["JavaScript", "Node.js", "Discord.js"]}
     />,
     <NewProject
       left={true}

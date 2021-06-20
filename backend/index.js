@@ -12,7 +12,12 @@ const token = "ODEwMjk3MzQwNDY3MzQ3NTA4.YChmNA.6NP4DgJ6b607SUpAvx7pWRfFcdI";
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+var corsOptions = {
+  origin: "http://graydonsk.com",
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -56,5 +61,3 @@ app.post("/form-submit", (req, res) => {
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
-

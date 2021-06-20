@@ -32,50 +32,69 @@ function body() {
             }}
           />
         </div>
-        <div className="body">
-          <ul className="list">
-            <li className="main-list-item">
-              <b style={{ fontWeight: 400 }}>JavaScript</b> ➞ Intermediate to
-              Advanced knowledge of web development with React, cross-platform
-              app development with React Native, and cross-platform desktop app
-              development with React and Electron. Experience with plain NodeJS
-              applications as well as ExpressJS servers, utilizing
-              authentication and MongoDB databases.
-            </li>
-            <li className="main-list-item">
-              <b style={{ fontWeight: 400 }}>HTML5/CSS</b> ➞ Intermediate to
-              Advanced knowledge of web development without a framework.
-              Developed multiple websites with this method.
-            </li>
-            <li className="main-list-item">
-              <b style={{ fontWeight: 400 }}>C++</b> ➞ Novice to Intermediate
-              knowledge of C++ within the Arduino/C++ language. Looking to
-              branch out to broader C++ in future endeavors.
-            </li>
-            <li className="main-list-item">
-              <b style={{ fontWeight: 400 }}>Java</b> ➞ Novice to Intermediate
-              knowledge of the Java programming language and topics such as
-              recursion and search/sort algorithms and their uses. Very little
-              application of the language in real-world examples.
-            </li>
-            <li className="main-list-item greylist">
-              <b style={{ fontWeight: 400 }}>Python</b> ➞ Beginner in Python,
-              learning technologies for web backends like Django. Working with
-              the kRPC interface to create flight software for Kerbal Space
-              Program, as well as learning how to create simulations for real
-              Thrust Vector Control models.
-            </li>
-            <li className="main-list-item greylist">
-              <b style={{ fontWeight: 400 }}>Swift</b> ➞ Beginner in Swift,
-              learning native iOS and MacOS development.
-            </li>
-            <li className="main-list-item greylist">
-              <b style={{ fontWeight: 400 }}>C</b> ➞ Took a course in C from
-              Duke University on Coursera. Little knowledge otherwise.
-            </li>
-          </ul>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <h4 className="software-tag-title">Languages</h4>
+          <div
+            style={{
+              width: "80%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              marginBottom: "10px",
+            }}
+          >
+            <BigTag tag="JavaScript" desc="Proficient" />
+            <BigTag tag="HTML5/CSS" desc="Proficient" />
+            <BigTag tag="C++" desc="Intermediate" />
+            <BigTag tag="Java" desc="Intermediate" />
+            <BigTag tag="Python" desc="Learning" />
+            <BigTag tag="Swift" desc="Learning" />
+            <BigTag tag="C" desc="Limited knowledge" />
+          </div>
+          <h4 className="software-tag-title">Libraries and Frameworks</h4>
+          <div
+            style={{
+              width: "80%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              marginBottom: "10px",
+            }}
+          >
+            <BigTag tag="Node.js" desc="Proficient" />
+            <BigTag tag="React" desc="Proficient" />
+            <BigTag tag="React Native" desc="Intermediate" />
+            <BigTag tag="Arduino" desc="Limited proficiency" />
+            <BigTag tag="Express.js" desc="Proficient" />
+            <BigTag tag="Electron" desc="Intermediate" />
+            <BigTag tag="Expo" desc="Limited proficiency" />
+          </div>
+          <h4 className="software-tag-title">Tools & Platforms</h4>
+          <div
+            style={{
+              width: "80%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              marginBottom: "25px",
+            }}
+          >
+            <BigTag tag="MongoDB" desc="Intermediate" />
+            <BigTag tag="Git" desc="Proficient" />
+            <BigTag tag="Github" desc="Proficient" />
+            <BigTag tag="Weebly, Wix, et al." desc="Proficient" />
+          </div>
         </div>
-        <br />
 
         <div className="title">
           Projects
