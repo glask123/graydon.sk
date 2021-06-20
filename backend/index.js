@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
@@ -7,7 +8,7 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
-const token = "ODEwMjk3MzQwNDY3MzQ3NTA4.YChmNA.6NP4DgJ6b607SUpAvx7pWRfFcdI";
+const token = process.env.DISCORD_TOKEN;
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -25,8 +26,8 @@ let transporter = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.google.com",
   auth: {
-    user: "gskmailing@gmail.com",
-    pass: "Oswaldnox123",
+    user: process.env.EMAIL_ACC,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
