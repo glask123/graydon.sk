@@ -12,6 +12,12 @@ import Vehicles from "./rocket-vehicles";
 import Computer from "./computer";
 import StockCircuit from "../assets/stock-circuit.jpeg";
 import BigTag from "./tag-big";
+import Evectio from "../assets/evectio.jpg";
+import Volo from "../assets/volo.jpg";
+import Upcoming from "../assets/smd.png";
+import Les from "../assets/les.png";
+import Sg from "../assets/sg.png";
+import Thunder from "../assets/thunder.png";
 
 function body() {
   return (
@@ -145,7 +151,7 @@ function body() {
           }}
         >
           <Computer
-            img={StockCircuit}
+            img={Volo}
             name="Volo"
             desc="Primary flight computer designed off of BPS Space's Blip computer using through-hole mounted components."
             cpu="MK20DX256VLH7 (Teensy 3.2)"
@@ -153,7 +159,7 @@ function body() {
             pressure="BMP280"
           />
           <Computer
-            img={StockCircuit}
+            img={Evectio}
             name="Evectio"
             desc="Primary launch computer, first fully-custom designed computer in Eagle based on an Arduino Nano."
             cpu="atmega328p (Nano)"
@@ -161,7 +167,7 @@ function body() {
             pressure="N/A"
           />
           <Computer
-            img={StockCircuit}
+            img={Upcoming}
             name="COMING SOON"
             desc="SMD flight computer custom designed in Eagle with better sensors, more I/O, and more capability."
             cpu="MK20DX256VLH7 (PJRC Schematic)"
@@ -210,6 +216,11 @@ function body() {
 
       <Item section="Music" image={Music} name="SPOTIFY">
         <div className="title">Instruments</div>
+        <div>
+          <img src={Les} />
+          <img src={Sg} />
+          <img src={Thunder} />
+        </div>
         <div className="body">
           <ul style={{ marginLeft: "30px" }}>
             <li>Guitar – 10 years</li>

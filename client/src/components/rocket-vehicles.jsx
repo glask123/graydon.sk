@@ -121,7 +121,7 @@ export default function Vehicles() {
 
             <div className="rocket-icon-container">
               <img src={Cal} alt="Calendar" className="rocket-icon" />
-              <span className="rocket-icon-text">Flights: April-May</span>
+              <span className="rocket-icon-text">Flights: June-July</span>
             </div>
           </div>
           <div
@@ -298,7 +298,7 @@ export default function Vehicles() {
 
             <div className="rocket-icon-container">
               <img src={Cal} alt="Calendar" className="rocket-icon" />
-              <span className="rocket-icon-text">Flights: May-June</span>
+              <span className="rocket-icon-text">Flights: July-August</span>
             </div>
           </div>
           <div
@@ -474,7 +474,7 @@ export default function Vehicles() {
 
             <div className="rocket-icon-container">
               <img src={Cal} alt="Calendar" className="rocket-icon" />
-              <span className="rocket-icon-text">Flights: June-July</span>
+              <span className="rocket-icon-text">Flights: July-August</span>
             </div>
           </div>
           <div
@@ -652,7 +652,7 @@ export default function Vehicles() {
 
             <div className="rocket-icon-container">
               <img src={Cal} alt="Calendar" className="rocket-icon" />
-              <span className="rocket-icon-text">Flights: July-August</span>
+              <span className="rocket-icon-text">Flights: September</span>
             </div>
           </div>
           <div
