@@ -608,3 +608,11 @@ icon:hover {
   font-size: 14px;
   font-weight: 300;
 }
+
+.check {
+  margin-bottom: 4px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

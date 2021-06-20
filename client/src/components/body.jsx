@@ -15,9 +15,8 @@ import BigTag from "./tag-big";
 import Evectio from "../assets/evectio.jpg";
 import Volo from "../assets/volo.jpg";
 import Upcoming from "../assets/smd.png";
-import Les from "../assets/les.png";
-import Sg from "../assets/sg.png";
-import Thunder from "../assets/thunder.png";
+import Instruments from "../assets/musicsill.png";
+import { ReactComponent as Checkbox } from "../assets/checkbox.svg";
 
 function body() {
   return (
@@ -215,25 +214,43 @@ function body() {
       </Item>
 
       <Item section="Music" image={Music} name="SPOTIFY">
-        <div className="title">Instruments</div>
-        <div>
-          <img src={Les} />
-          <img src={Sg} />
-          <img src={Thunder} />
+        <div
+          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+        >
+          <img src={Instruments} style={{ width: "70%" }} />
         </div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>Guitar – 10 years</li>
-            <li>Bass, Piano, Drums on and off for 5-6 years</li>
-          </ul>
+        <div className="check">
+          <Checkbox style={{ width: 20, height: "auto", marginRight: 5 }} />
+          Primary instrument: Guitar
         </div>
-        <div className="title">Instruments</div>
-        <div className="body" style={{ marginLeft: "35px" }}>
-          I've produced with Logic Pro 9/X for 9 years ever since it was
-          introduced to me in 3rd grade. I've shifted genres over time, but the
-          main styles of music that I compose are Rock, Jazz, and
-          Neo-Soul/Jazz/Funk-inspired music.
+        <div className="check">
+          <Checkbox style={{ width: 20, height: "auto", marginRight: 5 }} />
+          Also play bass, piano, and drums.
         </div>
+        <div className="check">
+          <Checkbox style={{ width: 20, height: "auto", marginRight: 5 }} />
+          Genres: Classic Rock, Alternative Rock, Jazz, Soul, Funk, Neo-Soul
+        </div>
+        <div className="check">
+          <Checkbox style={{ width: 20, height: "auto", marginRight: 5 }} />
+          High School Jazz Ensemble
+        </div>
+        <div className="check">
+          <Checkbox style={{ width: 20, height: "auto", marginRight: 5 }} />
+          Middle School Rock Band
+        </div>
+        <div style={{ textAlign: "center", fontSize: 14, marginTop: 10 }}>
+          Production/Composition in Logic Pro since 3rd grade in variety of
+          genres. Experience recording live music as well as electronic
+          instruments. Check out the Spotify link below for any upcoming
+          projects.
+        </div>
+
+        <Button
+          name="SPOTIFY"
+          link="https://open.spotify.com/user/glask1234"
+          local={false}
+        />
       </Item>
       <Item section="Design" image={Design} name="GALLERY">
         <div className="title">3D Modeling</div>
