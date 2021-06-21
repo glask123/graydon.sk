@@ -31,7 +31,7 @@ let transporter = nodemailer.createTransport({
   },
 });
 
-app.post("/form-submit", (req, res) => {
+app.post("/api/form-submit", (req, res) => {
   console.log(req.body);
 
   transporter.sendMail(

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import FadeIn from "react-fade-in";
+import axios from "axios";
 
 export default function Contact() {
   const [data, setData] = useState({
@@ -11,25 +12,18 @@ export default function Contact() {
   });
 
   let history = useHistory();
-  const handleSubmit = (event) => {
-    try {
-      fetch("/api/form-submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", mode: "no-cors" },
-        body: JSON.stringify(data),
-      })
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch((err) => {
-          alert("Error in form submission");
-        });
-    } catch (err) {
-      console.log(err);
-    }
-
-    history.push("/submitted");
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    const body = JSON.stringify(data);
+    try {
+      await axios.post("http://207.246.102.233:5000/api/form-submit", body);
+      history.push("/submitted");
+    } catch (err) {
+      history.push("/");
+      alert(
+        "There was an error sending this email. Please try again at another time or contact me directly at gschulzekalt@gmail.com"
+      );
+    }
   };
 
   const handleChange = (event) => {
