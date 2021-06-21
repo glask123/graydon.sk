@@ -50,8 +50,8 @@ app.post("/api/form-submit", (req, res) => {
       </ul>`,
     },
     function (err, info) {
-      if (error) {
-        console.log(error);
+      if (err) {
+        console.log(err);
       } else {
         console.log("Email sent: " + info.response);
       }
