@@ -42,11 +42,11 @@ function menu() {
         </button>
       </ScrollLink>
 
-      <Link to="/contact">
+      <a href="mailto:gschulzekalt@gmail.com">
         <button type="button" className="buttonClass">
           Contact
         </button>
-      </Link>
+      </a>
     </div>
   );
 }
