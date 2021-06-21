@@ -16,7 +16,10 @@ export default function Contact() {
     event.preventDefault();
     const body = JSON.stringify(data);
     try {
-      await axios.post("http://207.246.102.233:5000/api/form-submit", body);
+      const { data: info } = await axios.post(
+        "http://207.246.102.233:5000/api/form-submit",
+        body
+      );
       history.push("/submitted");
     } catch (err) {
       history.push("/");

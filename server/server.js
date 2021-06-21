@@ -14,7 +14,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 var corsOptions = {
-  origin: "http://graydonsk.com",
+  origin: "http://graydon.sk",
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
