@@ -8,7 +8,12 @@ var scroll = Scroll.animateScroll;
 
 export default function main() {
   return (
-    <div style={{ backgroundColor: "#1A1A1A", minHeight: "100vh" }}>
+    <div
+      style={{
+        backgroundColor: "#1A1A1A",
+        minHeight: "100vh",
+      }}
+    >
       <MenuBar />
       <FadeIn>
         <div

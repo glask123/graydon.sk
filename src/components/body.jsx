@@ -17,6 +17,16 @@ import Volo from "../assets/volo.jpg";
 import Upcoming from "../assets/smd.png";
 import Instruments from "../assets/musicsill.png";
 import { ReactComponent as Checkbox } from "../assets/checkbox.svg";
+import Show from "../components/show";
+
+import Island from "../assets/shows/island.png";
+import Company from "../assets/shows/company.jpeg";
+import Fiddler from "../assets/shows/fiddler.png";
+import Hair from "../assets/shows/hair.png";
+import Oliver from "../assets/shows/oliver.png";
+import Guys from "../assets/shows/guys.png";
+import Footloose from "../assets/shows/footloose.png";
+import Crazy from "../assets/shows/crazy.png";
 
 function body() {
   return (
@@ -295,46 +305,95 @@ function body() {
         </div>
       </Item>
       <Item section="Stagecraft" image={Theater} name="LMP">
-        <p className="body" style={{ marginLeft: 0 }}>
+        <p
+          className="body"
+          style={{ textAlign: "center", marginTop: 15, marginBottom: 15 }}
+        >
           Work primarily in lighting and sound design/operation for high school
           productions since 2016 through a variety of programs. Most knowledge
           in the EOS family of lighting consoles and digital audio systems.
         </p>
-        <div className="title" style={{ marginTop: 10 }}>
-          Shows
-        </div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>Fiddler on the Roof (backstage) — LMP 2016</li>
-            <li>Oliver! (backstage) — LMP 2017</li>
-            <li>
-              Guys & Dolls (Lighting designer/programmer/operator) — LMP 2017
-            </li>
-            <li>Once on This Island (Sound designer/operator) — LMP 2017</li>
-            <li>
-              Footloose (Lighting designer/programmer, Sound operator) — LMP
-              2018
-            </li>
-            <li>
-              Guys & Dolls (Lighting designer/programmer, Sound
-              designer/programmer) - W 2018
-            </li>
-            <li>
-              Hair (Lighting co-designer/programmer, Sound designer/operator) —
-              LMP 2018
-            </li>
-            <li>Crazy for You (Lighting help) — LMP 2019</li>
-            <li>Dance Production (Sound operator) — HW 2019</li>
-            <li>
-              Company (Lighting designer/programmer, Sound designer/operator) —
-              LMP 2019
-            </li>
-            <li>Into the Woods (Spotlight) — HW 2019</li>
-            <li>& More (Paused due to COVID-19)</li>
-          </ul>
+        <div
+          style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+        >
+          <Show
+            name="Fiddler on the Roof"
+            position="Backstage"
+            company="LMP"
+            year="2016"
+            bg={Fiddler}
+          />
+          <Show
+            name="Oliver!"
+            position="Backstage"
+            company="LMP"
+            year="2017"
+            bg={Oliver}
+          />
+          <Show
+            name="Guys & Dolls"
+            position="Lighting (design & ops)"
+            company="LMP"
+            year="2017"
+            bg={Guys}
+          />
+          <Show
+            name="Once on This Island"
+            position="Sound (design & ops)"
+            company="LMP"
+            year="2017"
+            bg={Island}
+          />
+          <Show
+            name="Footloose"
+            position={"Lighting design, Sound (design & ops)"}
+            company="LMP"
+            year="2018"
+            bg={Footloose}
+          />
+          <Show
+            name="Guys & Dolls"
+            position="Lighting & sound design"
+            company="Willows"
+            year="2018"
+            bg={Guys}
+          />
+          <Show
+            name="Hair"
+            position="Lighting design, Sound (design & ops) "
+            company="LMP"
+            year="2018"
+            bg={Hair}
+          />
+          <Show
+            name="Crazy for You"
+            position="Lighting asst."
+            company="LMP"
+            year="2019"
+            bg={Crazy}
+          />
+          <Show
+            name="Dance Production"
+            position="Sound ops"
+            company="Harvard-Westlake MS"
+            year="2019"
+          />
+          <Show
+            name="Company"
+            position="Lighting design, Sound (design & ops)"
+            company="LMP"
+            year="2019"
+            bg={Company}
+          />
+          <Show
+            name="Into the Woods"
+            position="Spot"
+            company="Harvard-Westlake US"
+            year="2019"
+          />
         </div>
       </Item>
-      <div style={{ height: "50px" }}></div>
+      <div style={{ height: "80px" }}>.</div>
     </div>
   );
 }
