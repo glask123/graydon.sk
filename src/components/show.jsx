@@ -83,14 +83,29 @@ export default function Show(props) {
               fontWeight: 500,
               fontSize: 14,
               color: "#bbbbbb",
+              lineHeight: "15px",
             }}
           >
             {props.name}
           </div>
-          <div style={{ fontWeight: 400, fontSize: 13, color: "#bbbbbb" }}>
+          <div
+            style={{
+              fontWeight: 400,
+              fontSize: 13,
+              color: "#bbbbbb",
+              lineHeight: "15px",
+            }}
+          >
             {props.position}
           </div>
-          <div style={{ fontWeight: 300, fontSize: 13, color: "#bbbbbb" }}>
+          <div
+            style={{
+              fontWeight: 300,
+              fontSize: 13,
+              color: "#bbbbbb",
+              lineHeight: "15px",
+            }}
+          >
             {props.company} – {props.year}
           </div>
         </div>
