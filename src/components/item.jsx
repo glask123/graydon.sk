@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./itemHeader";
-import Button from "./linkbutton";
 var Scroll = require("react-scroll");
 var Element = Scroll.Element;
 

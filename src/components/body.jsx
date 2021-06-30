@@ -232,7 +232,7 @@ function body() {
         <div
           style={{ width: "100%", display: "flex", justifyContent: "center" }}
         >
-          <img src={Instruments} style={{ width: "70%" }} />
+          <img src={Instruments} style={{ width: "70%" }} alt="" />
         </div>
         <div className="check">
           <Checkbox style={{ width: 20, height: "auto", marginRight: 5 }} />

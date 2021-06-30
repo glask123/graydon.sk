@@ -56,6 +56,7 @@ export default function Show(props) {
       >
         <img
           src={props.bg}
+          alt=""
           style={{
             position: "absolute",
             margin: "-8px",

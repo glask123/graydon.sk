@@ -122,20 +122,20 @@ export default function SoftwareProjects() {
   ];
 
   const handlePlusClick = () => {
-    if (num != arr.length) {
+    if (num !== arr.length) {
       setNum(num + 1);
     }
   };
 
   const handleMinusClick = () => {
-    if (num != 1) {
+    if (num !== 1) {
       setNum(num - 1);
     }
   };
 
   let image;
 
-  if (num == arr.length) {
+  if (num === arr.length) {
     image = <React.Fragment />;
   } else {
     image = (

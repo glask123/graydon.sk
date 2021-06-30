@@ -23,7 +23,7 @@ export default function Vehicles() {
     setCurrent(value);
   };
 
-  if (current == "one") {
+  if (current === "one") {
     return (
       <div
         style={{
@@ -200,7 +200,7 @@ export default function Vehicles() {
         </div>
       </div>
     );
-  } else if (current == "two") {
+  } else if (current === "two") {
     return (
       <div
         style={{
@@ -377,7 +377,7 @@ export default function Vehicles() {
         </div>
       </div>
     );
-  } else if (current == "three") {
+  } else if (current === "three") {
     return (
       <div
         style={{
@@ -553,7 +553,7 @@ export default function Vehicles() {
         </div>
       </div>
     );
-  } else if (current == "four") {
+  } else if (current === "four") {
     return (
       <div
         style={{

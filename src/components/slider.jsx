@@ -11,7 +11,7 @@ export default function SliderMenu(props) {
   });
 
   const handleClick = (event) => {
-    if (event.target.value != current) {
+    if (event.target.value !== current) {
       setColors({
         ...colors,
         [event.target.value]: ["white", "#1f1f1f"],
