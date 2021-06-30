@@ -1,17 +1,20 @@
 import React, { useState } from "react";
-import SliderMenu from "./slider";
-import { ReactComponent as Circle } from "../assets/bodytube.svg";
-import { ReactComponent as Width } from "../assets/width.svg";
-import { ReactComponent as Parabola } from "../assets/parabola.svg";
-import { ReactComponent as Dash } from "../assets/dash.svg";
 import FadeIn from "react-fade-in";
-import Rocket1 from "../assets/rocket1.png";
-import Rocket4 from "../assets/rocket4.png";
-import Fire from "../assets/fire.png";
-import Comp from "../assets/circuit.png";
-import Cal from "../assets/cal.png";
-import Weight from "../assets/weight.png";
-import RocketL1 from "../assets/L1.png";
+import SliderMenu from "./slider";
+
+import { ReactComponent as Circle } from "../assets/rocket/graphics/bodytube.svg";
+import { ReactComponent as Width } from "../assets/rocket/graphics/width.svg";
+import { ReactComponent as Parabola } from "../assets/rocket/graphics/parabola.svg";
+import { ReactComponent as Dash } from "../assets/rocket/graphics/dash.svg";
+
+import Rocket1 from "../assets/rocket/rockets/rocket1.png";
+import Rocket4 from "../assets/rocket/rockets/rocket4.png";
+import RocketL1 from "../assets/rocket/rockets/L1.png";
+
+import Fire from "../assets/rocket/icons/fire.png";
+import Comp from "../assets/rocket/icons/circuit.png";
+import Cal from "../assets/rocket/icons/cal.png";
+import Weight from "../assets/rocket/icons/weight.png";
 
 export default function Vehicles() {
   const [current, setCurrent] = useState("one");

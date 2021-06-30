@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import Plus from "../assets/expand.png";
-import NewProject from "./project-new";
-import CertamenBot from "../assets/cbt.png";
-import HwApp from "../assets/hwapp.jpeg";
-import CoctBot from "../assets/coctbot.png";
-import Coct from "../assets/coct.png";
-import Stream from "../assets/stream.png";
-import Cbotsite from "../assets/certamenbot-site.png";
-import Brick from "../assets/brick.png";
-import Fencing from "../assets/fencing.png";
 import FadeIn from "react-fade-in";
+
+import NewProject from "./project-new";
+
+import Plus from "../assets/software/expand.png";
+import CertamenBot from "../assets/software/projects/cbt.png";
+import HwApp from "../assets/software/projects/hwapp.jpeg";
+import CoctBot from "../assets/software/projects/coctbot.png";
+import Coct from "../assets/software/projects/coct.png";
+import Stream from "../assets/software/projects/stream.png";
+import Cbotsite from "../assets/software/projects/certamenbot-site.png";
+import Brick from "../assets/software/projects/brick.png";
+import Fencing from "../assets/software/projects/fencing.png";
 
 export default function SoftwareProjects() {
   const [num, setNum] = useState(1);

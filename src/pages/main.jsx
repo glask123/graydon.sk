@@ -2,7 +2,7 @@ import "../App.css";
 import MenuBar from "../components/menubar";
 import Body from "../components/body";
 import FadeIn from "react-fade-in";
-import Photo from "../assets/portrait.png";
+import Photo from "../assets/home/portrait.png";
 var Scroll = require("react-scroll");
 var scroll = Scroll.animateScroll;
 

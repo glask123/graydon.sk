@@ -1,10 +1,11 @@
 import React from "react";
-import Phone from "../assets/phone.png";
-import Twitter from "../assets/twitter.png";
-import Mail from "../assets/mail.png";
-import Linkedin from "../assets/linkedin.png";
-import Insta from "../assets/insta.png";
-import Yt from "../assets/yt.png";
+
+import Phone from "../assets/social/phone.png";
+import Twitter from "../assets/social/twitter.png";
+import Mail from "../assets/social/mail.png";
+import Linkedin from "../assets/social/linkedin.png";
+import Insta from "../assets/social/insta.png";
+import Yt from "../assets/social/yt.png";
 
 function socials() {
   return (

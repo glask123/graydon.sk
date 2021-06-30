@@ -1,23 +1,28 @@
 import React from "react";
 import Item from "./item";
-import Software from "../assets/software.png";
-import Rocketry from "../assets/rocket.jpg";
-import Design from "../assets/3d.png";
-import Theater from "../assets/theater.png";
-import Music from "../assets/music.png";
-import Photo from "../assets/photo.png";
+
 import SoftwareProjects from "../components/software-proj";
 import Button from "./linkbutton";
 import Vehicles from "./rocket-vehicles";
 import Computer from "./computer";
-import StockCircuit from "../assets/stock-circuit.jpeg";
 import BigTag from "./tag-big";
-import Evectio from "../assets/evectio.jpg";
-import Volo from "../assets/volo.jpg";
-import Upcoming from "../assets/smd.png";
-import Instruments from "../assets/musicsill.png";
-import { ReactComponent as Checkbox } from "../assets/checkbox.svg";
+
 import Show from "../components/show";
+import Adobe from "../components/adobe";
+
+import Software from "../assets/icons/software.png";
+import Rocketry from "../assets/icons/rocket.jpg";
+import Design from "../assets/icons/3d.png";
+import Theater from "../assets/icons/theater.png";
+import Music from "../assets/icons/music.png";
+import Photo from "../assets/icons/photo.png";
+
+import Evectio from "../assets/rocket/computers/evectio.jpg";
+import Volo from "../assets/rocket/computers/volo.jpg";
+import Upcoming from "../assets/rocket/computers/smd.png";
+
+import Instruments from "../assets/music/musicsill.png";
+import { ReactComponent as Checkbox } from "../assets/music/checkbox.svg";
 
 import Island from "../assets/shows/island.png";
 import Company from "../assets/shows/company.jpeg";
@@ -299,7 +304,7 @@ function body() {
           <ul style={{ marginLeft: "30px" }}>
             <li>Adobe Premiere Pro [Experienced]</li>
             <li>Adobe Photoshop [Experienced]</li>
-            <li>Adobe Lightroom Classic [Beginner]</li>
+            <li>Adobe Lightroom Classic [Intermediate]</li>
             <li>Adobe After Effects [Beginner]</li>
           </ul>
         </div>

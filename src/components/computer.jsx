@@ -1,7 +1,8 @@
 import React from "react";
-import Cpu from "../assets/cpu.png";
-import Imu from "../assets/imu.png";
-import Pressure from "../assets/pressure.png";
+
+import Cpu from "../assets/rocket/icons/cpu.png";
+import Imu from "../assets/rocket/icons/imu.png";
+import Pressure from "../assets/rocket/icons/pressure.png";
 
 export default function Computer(props) {
   return (
