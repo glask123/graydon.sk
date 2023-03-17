@@ -269,21 +269,74 @@ function body() {
       </Item>
       <Item section="Design" image={Design} name="GALLERY">
         <div className="title">3D Modeling</div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>Sketchup [Intermediate-Advanced]</li>
-            <li>Blender [Intermediate]</li>
-            <li>Autodesk Inventor [Intermediate]</li>
-          </ul>
+        <p
+          className="body"
+          style={{ textAlign: "center", marginTop: 15, marginBottom: 15 }}
+        >
+          Interior design in SketchUp for architectural drawings and sizing,
+          which are then used to create photorealistic renders in Blender for a
+          final product. I also use Blender for animation/modeling. Inventor is
+          used as primary CAD software for all things technical, including
+          Rocketry, and models are 3D printed.
+        </p>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <div
+            style={{
+              width: "80%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              marginBottom: "10px",
+            }}
+          >
+            <BigTag tag="Blender" desc="Proficient" />
+            <BigTag tag="SketchUp" desc="Proficient" />
+            <BigTag tag="Autodesk Inventor" desc="Intermediate" />
+            <BigTag tag="Autodesk Fusion 360" desc="Beginner" />
+          </div>
         </div>
         <div className="title">Graphic Design</div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>Adobe Photoshop [Experienced]</li>
-            <li>Adobe Illustrator [Experienced]</li>
-            <li>Adobe XD [Intermediate]</li>
-            <li>Adobe InDesign [Beginner]</li>
-          </ul>
+        <p
+          className="body"
+          style={{ textAlign: "center", marginTop: 15, marginBottom: 15 }}
+        >
+          I do 2D design in a variety of programs, both raster and vector
+          graphics, for a variety of purposes. All websites and apps that I
+          build are designed in Adobe XD before production.
+        </p>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Adobe
+            program="Ps"
+            color="#032733"
+            bordercolor="#4EBFE7"
+            level="Proficient"
+          />
+          <Adobe
+            program="Ai"
+            color="#251401"
+            bordercolor="#FA7A01"
+            level="Proficient"
+          />
+          <Adobe
+            program="Xd"
+            color="#2B011F"
+            bordercolor="#EB2EC6"
+            level="Proficient"
+          />
+          <Adobe
+            program="Id"
+            color="#300012"
+            bordercolor="#E74787"
+            level="Intermediate"
+          />
         </div>
       </Item>
       <Item
@@ -292,21 +345,39 @@ function body() {
         name="YOUTUBE"
         link="https://www.youtube.com/channel/UC0ZOHGEBcc15STsyv-mx76Q"
       >
-        <p className="body" style={{ marginLeft: 0 }}>
-          I direct/produce/edit film projects which I plan to do more this year
-          and release on youtube, possibly on both my personal channel as well
-          as a collaborative research project.
+        <p
+          className="body"
+          style={{ textAlign: "center", marginTop: 15, marginBottom: 15 }}
+        >
+          Work primarily in lighting and sound design/operation for high school
+          productions since 2016 through a variety of programs. Most knowledge
+          in the EOS family of lighting consoles and digital audio systems.
         </p>
-        <div className="title" style={{ marginTop: 10 }}>
-          Programs
-        </div>
-        <div className="body">
-          <ul style={{ marginLeft: "30px" }}>
-            <li>Adobe Premiere Pro [Experienced]</li>
-            <li>Adobe Photoshop [Experienced]</li>
-            <li>Adobe Lightroom Classic [Intermediate]</li>
-            <li>Adobe After Effects [Beginner]</li>
-          </ul>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Adobe
+            program="Ps"
+            color="#032733"
+            bordercolor="#4EBFE7"
+            level="Proficient"
+          />
+          <Adobe
+            program="Lr"
+            color="#022327"
+            bordercolor="#3BDBD8"
+            level="Intermediate"
+          />
+          <Adobe
+            program="Pr"
+            color="#180024"
+            bordercolor="#DB7FE9"
+            level="Proficient"
+          />
+          <Adobe
+            program="Ae"
+            color="#1F0240"
+            bordercolor="#C285F0"
+            level="Beginner"
+          />
         </div>
       </Item>
       <Item section="Stagecraft" image={Theater} name="LMP">

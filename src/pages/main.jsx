@@ -77,6 +77,7 @@ export default function main() {
           height: "5%",
           bottom: 0,
           backgroundColor: "#1A1A1A",
+          zIndex: 10,
         }}
       >
         <div

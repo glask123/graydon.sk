@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -632,4 +632,21 @@ img {
 
 .show:hover {
   opacity: 0.7;
+}
+
+.adobe {
+  font-family: Ubuntu;
+  font-weight: bold;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  transition: opacity 100ms ease-in;
+  cursor: pointer;
+}
+
+.adobe:hover {
+  opacity: 0.6;
 }
